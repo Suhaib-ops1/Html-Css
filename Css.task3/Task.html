@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo with Read More</title>
+  <link rel="stylesheet" href="styles.css">
+
+
+  <style>
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  
+}
+
+
+.photo {
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    object-fit: cover; 
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://tenonedesign.com/php/slir/w2000-q80/images/pd_mountie_plus_top_16_developer_hero.jpg");
+}
+
+
+.heading {
+
+  color: white; 
+  font-size: 2rem;
+  font-family: Arial, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.read-more-btn {
+  padding: 10px 20px;
+  background-color: #ff6600; 
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+  transition: all .3s;
+}
+
+.read-more-btn:hover {
+  background-color: #0be500; 
+  transform: scale(1.2);
+}
+.para {
+    
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.h22{
+    position: absolute;
+    text-align: center;
+    left: 40%;
+    
+
+}
+.ppp{
+    text-align: center;
+    position: absolute;
+    top: 80%;
+    left: 1%;
+    display: flex;
+    font-family: "Agu Display", serif;
+}
+.box{
+    background-color: rgb(78, 76, 76);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 700px;
+    align-items: center
+
+;
+ 
+}
+.card{
+    border: 1px black;
+    background-color: white;
+    width: 30%;
+    height: 600px;
+    text-align: center;
+    transition: transform .3s linear;
+
+}
+#card1:hover{
+    background-color: #ff5722;
+    transform: scale(1.2);
+    border-radius: 50%;
+    width: 300px;
+
+}
+#card2:hover{
+    transform: rotate(20deg) translate(200px);
+    
+
+}
+#card3:hover{
+    transform: skew(28deg) scale(1.5);
+
+}
+.second{
+    text-align: center;
+    height: 300px;
+    padding: 4%;
+
+}
+img{
+    width: 100%;
+    height: 200px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    background-color: #0be500;
+    height: 500px;
+    
+}
+.item{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.footer{
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    transition: all;
+}
+.footer:hover{
+    transform: scale(-1);
+    
+}
+a:hover{
+    color: #e50000;
+    transform: scale(2);
+}
+
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Agu+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+   
+   <div class="photo">
+    <h1 class="heading">Welcome to Responsive web</h1>
+    <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur repudiandae sint sapiente tempora sequi autem accusamus iusto corrupti rerum nostrum molestias ipsum nesciunt, incidunt et laudantium nemo a vel omnis.</p>
+    
+    
+    <button class="read-more-btn">Read More</button>
+    
+    <p class="ppp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, recusandae harum. Consequuntur, sit, tenetur, a natus nulla error officiis repudiandae qui excepturi cumque provident minus minima sed? Minima, eveniet maxime! Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eaque maiores exercitationem nisi. Explicabo aut, sunt similique minima pariatur impedit ab, animi nam expedita veritatis iure. Laudantium officiis quos ratione?</p>
+
+
+    </div>
+    
+        <h2 class="h22">Responsive Web Development</h2>
+    
+
+    </div>
+  <div class="box"> 
+
+    <div class="card" id="card1">
+        <img src="./Screenshot 2024-12-17 201044.png" alt="">
+        <h3>Why Responsive?</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic similique assumenda nobis consequatur nisi eum sapiente dolor, adipisci saepe dolores voluptatibus praesentium illo? Repellendus perspiciatis, nam officiis qui nemo magni.</p>
+    </div>
+
+    <div class="card" id="card2">
+        <img src="./Screenshot 2024-12-17 201044.png" alt="">
+        <h3>Same Expercince <br>Everywhere</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, itaque maiores inventore ex reprehenderit, officiis distinctio sunt deleniti dolorum veniam explicabo iste ipsa eum odit similique. Libero quaerat nisi necessitatibus.</p>
+    </div>
+
+    <div class="card" id="card3">
+        <img src="./Screenshot 2024-12-17 201044.png" alt="">
+        <h3>Improve Your <br>accessibility</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore facere mollitia delectus magni, accusantium libero, facilis blanditiis odit cupiditate placeat ducimus eos. Consectetur, minus vero amet et modi inventore? Magnam.</p>
+    </div>
+
+    
+
+   </div>
+   <div class="second">
+        <h2>Develop Your Website</h2><br><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis quis dolor esse eum quaerat fugiat vel nostrum ab? Tempore et, eos ad maiores expedita quibusdam illo dolorum <br>voluptate molestiae enim.</p>
+   </div>
+
+    <div class="grid-container">  
+
+        <div class="item" style="background-color: rgb(93, 190, 223);">
+            <h3>Contact us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla magnam rerum aliquid tenetur aliquam sequi. Esse aliquid eum vero ut minus, eius aliquam optio, veniam unde repudiandae officiis, et voluptas!</p>
+            <a href="#">suhaibabulail@gmail.com</a>
+        </div>
+
+        <div class="item" style="background-color: rgb(54, 57, 60);">
+            <h3>About us</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores facilis hic porro quisquam, quibusdam, esse modi doloremque quia quod magni, id numquam. Illo mollitia, temporibus debitis aperiam tenetur nihil deleniti!</p>
+            <a href="#">www.bestteamever.com</a>
+        </div>
+
+
+    </div>
+        <footer class="footer">
+            <p>lorem ipsum dolor sit. <br>Esse, doloribus <a href="#">Cohort Five</a></p>
+
+        </footer>
+        
+
+    
+
+
+</body>
+</html>
+
+
+</body>
+</html>
