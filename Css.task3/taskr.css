@@ -9,8 +9,8 @@ body{
     background-color: #EFF2F1;
 }
 @font-face {
-    font-family: "No Bills extra bold";
-    src: url(post-no-bills/postnobillscolombo-extrabold.ttf);
+    font-family: "weird";
+    src: url(../Css.task4/postnobillscolombo-extrabold.ttf);
 }
 
 header{
@@ -29,7 +29,7 @@ nav{
 }
 
 .logo h1{
-    font-family: "No Bills extra bold";
+    font-family: "weird";
     font-weight: 800;
     line-height: 76.75px;
     font-size: 51.33px;
